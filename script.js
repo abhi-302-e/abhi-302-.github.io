@@ -1,0 +1,5 @@
+const btn=document.getElementById('menuBtn');
+const nav=document.getElementById('nav');
+btn.addEventListener('click',()=>nav.style.display=nav.style.display==='flex'?'none':'flex');
+document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<=800)nav.style.display='none'}));
+document.getElementById('year').textContent=new Date().getFullYear();
