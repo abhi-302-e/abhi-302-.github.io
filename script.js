@@ -1,5 +1,1 @@
-const btn=document.getElementById('menuBtn');
-const nav=document.getElementById('nav');
-btn.addEventListener('click',()=>nav.style.display=nav.style.display==='flex'?'none':'flex');
-document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<=800)nav.style.display='none'}));
-document.getElementById('year').textContent=new Date().getFullYear();
+const b=document.getElementById("menu"),n=document.getElementById("nav");b.onclick=()=>n.style.display=n.style.display==="flex"?"none":"flex";document.querySelectorAll("nav a").forEach(x=>x.onclick=()=>{if(innerWidth<=800)n.style.display="none"});document.getElementById("year").textContent=new Date().getFullYear();const o=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add("show")),{threshold:.12});document.querySelectorAll(".reveal").forEach(x=>o.observe(x));
